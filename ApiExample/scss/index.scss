@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2f5d62;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.errorInput {
+  display: block;
+  color: #f8ede3;
+  font-weight: 300;
+  text-align: center;
+}
+
+%inputBox {
+  font-weight: 400;
+  color: white;
+  background-color: #798777;
+  border: 1px solid black;
+  font-size: 1rem;
+  padding: 0.2rem;
+  border-radius: 5px;
+}
+
+%textBox {
+  background-color: #f8ede3;
+  width: 100%;
+  text-align: center;
+  border: 2px solid black;
+  padding: 0.5rem;
+}
+
+header{
+  h1 {
+    color: #ffb037;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+  h3 {
+    color: #ffe268;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .fact-type {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    label {
+      color: #f8ede3;
+      font-weight: 400;
+      font-size: 1rem;
+    }
+    select {
+      @extend %inputBox;
+    }
+  }
+  form {
+    #inputFact {
+      @extend %inputBox;
+      text-align: center;
+    }
+    #request {
+      @extend %inputBox;
+      background-color: #0b912c;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+  #response {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    #factNumber {
+      text-align: center;
+      font-weight: 600;
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: white;
+      border: 2px solid black;
+      width: 100%;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom: none;
+      font-size: 2rem;
+    }
+    #factType {
+      @extend %textBox;
+      background-color: #f3ddc8;
+      font-weight: 600;
+    }
+    #factText {
+      @extend %textBox;
+      border-top: none;
+      font-weight: 400;
+    }
+  }
+}

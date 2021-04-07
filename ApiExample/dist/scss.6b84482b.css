@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2f5d62;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.errorInput {
+  display: block;
+  color: #f8ede3;
+  font-weight: 300;
+  text-align: center;
+}
+
+.container form #request, .container form #inputFact, .container .fact-type select {
+  font-weight: 400;
+  color: white;
+  background-color: #798777;
+  border: 1px solid black;
+  font-size: 1rem;
+  padding: 0.2rem;
+  border-radius: 5px;
+}
+
+.container #response #factText, .container #response #factType {
+  background-color: #f8ede3;
+  width: 100%;
+  text-align: center;
+  border: 2px solid black;
+  padding: 0.5rem;
+}
+
+header h1 {
+  color: #ffb037;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+header h3 {
+  color: #ffe268;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .fact-type {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.container .fact-type label {
+  color: #f8ede3;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.container form #inputFact {
+  text-align: center;
+}
+.container form #request {
+  background-color: #0b912c;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.container form #request:hover {
+  color: black;
+}
+.container #response {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.container #response #factNumber {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: white;
+  border: 2px solid black;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: none;
+  font-size: 2rem;
+}
+.container #response #factType {
+  background-color: #f3ddc8;
+  font-weight: 600;
+}
+.container #response #factText {
+  border-top: none;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=/scss.6b84482b.css.map */

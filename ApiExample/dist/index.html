@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/scss.6b84482b.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="/ts.841fc46b.js" defer=""></script>
+    <title>Number Facts</title>
+  <script src="/scss.6b84482b.js"></script></head>
+  <body>
+    <header>
+      <h1>Numbers</h1>
+      <h3>An API for interesting facts about numbers</h3>
+    </header>
+    <div class="container">
+      <div class="fact-type">
+        <label for="facts">Select a fact:</label>
+        <select name="facts" id="facts">
+          <option value="year" selected="selected">Year</option>
+          <option value="trivia">Trivia</option>
+          <option value="math">Math</option>
+        </select>
+      </div>
+      <form id="form">
+        <input type="number" id="inputFact" placeholder="Year" autocomplete="off">
+        <input type="submit" value="Request" id="request">
+        <span id="errorInput"></span>
+      </form>
+      <div id="response"></div>
+    </div>
+  </body>
+</html>
