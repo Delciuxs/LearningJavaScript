@@ -1,0 +1,29 @@
+.react-date-picker__wrapper {
+  border: none;
+}
+
+.react-date-picker__inputGroup__input,
+.react-date-picker__inputGroup__day {
+  color: grey;
+  cursor: pointer;
+}
+
+.react-date-picker__clear-button,
+.react-date-picker__button {
+  color: grey;
+  background-color: #222;
+}
+
+svg {
+  &:hover > line {
+    stroke: white;
+  }
+  &:hover > rect {
+    stroke: white;
+  }
+}
+
+line,
+rect {
+  stroke: grey;
+}

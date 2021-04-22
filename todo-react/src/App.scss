@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  background-color: #f8f1f1;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor {
+  width: 700px;
+  max-width: 90%;
+}

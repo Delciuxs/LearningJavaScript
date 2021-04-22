@@ -1,0 +1,57 @@
+.elementoLista {
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid black;
+  &:hover {
+    background-color: rgb(236, 236, 236);
+  }
+  &:hover > .actions-elemento-lista > #delete {
+    display: block;
+  }
+  &:hover > .actions-elemento-lista > #edit {
+    display: block;
+  }
+  .checkbox-text {
+    display: flex;
+    align-items: center;
+
+    .tarea-fecha {
+      h3 {
+        font-size: 1rem;
+        font-weight: 500;
+        padding-bottom: 0.5rem;
+      }
+      h6 {
+        font-size: 0.6rem;
+        font-weight: 600;
+      }
+    }
+  }
+  .checkbox {
+    margin: 1rem;
+  }
+
+  #delete,
+  #edit {
+    margin: 0.5rem;
+    cursor: pointer;
+    display: none;
+  }
+
+  #delete {
+    margin-right: 1rem;
+  }
+
+  .tarea-marcada {
+    text-decoration: line-through;
+    color: rgb(65, 64, 64);
+  }
+
+  .actions-elemento-lista {
+    display: flex;
+  }
+}
